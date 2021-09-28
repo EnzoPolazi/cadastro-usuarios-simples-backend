@@ -33,4 +33,4 @@ mongoose.connect(process.env.DB_CONNECT,
 );
 
 const port = 3000;
-app.listen(port, () => console.log('Servidor inicializado e rodando'));
+app.listen(process.env.PORT || port);

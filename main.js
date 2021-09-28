@@ -32,5 +32,4 @@ mongoose.connect(process.env.DB_CONNECT,
     () => console.log('Conectado ao banco')
 );
 
-const port = 3000;
-app.listen(process.env.PORT || port);
+app.listen(process.env.PORT);
